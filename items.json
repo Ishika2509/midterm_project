@@ -1,14 +1,14 @@
 {
     "Butter Masala Dosa": {
         "price": 12.95,
-        "orders": 3
+        "orders": 4
     },
     "Mysore Masala Dosa": {
         "price": 11.95,
-        "orders": 1
+        "orders": 2
     },
     "Plain Dosa": {
         "price": 9.95,
-        "orders": 1
+        "orders": 2
     }
 }
