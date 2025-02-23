@@ -3,12 +3,14 @@ import sys
 import re
 from collections import defaultdict
 
+
 def format_phone_number(phone):
     """Ensure phone number is formatted as xxx-xxx-xxxx"""
     phone = re.sub(r"\D", "", phone)  # Remove non-digit characters
     if len(phone) == 10:
         return f"{phone[:3]}-{phone[3:6]}-{phone[6:]}"
     return phone  # Return unchanged if not valid
+
 
 def process_orders(file_path):
     try:
@@ -45,7 +47,9 @@ def process_orders(file_path):
     with open("items.json", "w") as items_file:
         json.dump(items, items_file, indent=4)
 
-    print("Processing complete. customers.json and items.json have been created.")
+    print("Processing complete. ")
+    print("customers.json and items.json have been created.")
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
